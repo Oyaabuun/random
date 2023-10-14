@@ -1,0 +1,50 @@
+FOR CREATING A VIRTUAL ENVIRONMENT BEFORE STARTING A PROJECT YOU NEED TO GIVE THIS CODES 
+use the below code only when creating the virtual environmentt inside the local library 
+1. conda create -p venv python=3.8 
+
+create inside the local directory
+ChatGPT
+If you want to create a Conda environment inside a specific local directory, you can use the --prefix option to specify the path where the environment should be created. Here's how you can do it:
+Open your terminal or command prompt.
+Navigate to the directory where you want to create the Conda environment. You can use the cd command to change your current working directory to the desired location.
+Use the conda create command with the --prefix option to specify the directory path for the environment. For example, to create an environment named "myenv" inside the current directory, you can run:
+
+conda create --prefix ./myenv
+
+This command will create a Conda environment named "myenv" in the current directory (./ refers to the current directory).
+After the environment is created, you can activate it by specifying its full path:
+
+conda activate /full/path/to/your/environment
+
+Remember to replace /full/path/to/your/environment with the actual full path to your environment.
+By following these steps, you can create a Conda environment inside a specific local directory.
+
+
+************************************************************************************************************************************************************************************************************************************************
+
+
+if you want to create inside a local (1 ) default(2) library you will use 
+1. conda create -p venv
+1. conda create -n xyz
+
+To see the list of the environment
+1. conda env list
+2. conda info --envs
+
+to activate the conda environment
+1. conda avtivate pathname
+2. conda activate "D:\jupyter\ineuron new\25th March Live Class Project pipeline explanation\demo-pipeline-main\venv"
+
+Deletinga conda env
+1. conda env remove --prefix "D:\jupyter\ineuron new\25th March Live Class Project pipeline explanation\demo-pipeline-main\venv"
+
+whatever you dont want to add into github mention in gitignore
+
+GIT Commands
+1.git init
+2. git add . 
+3. git reset 
+4. git status
+5. git branch -M main 
+6. git remote add Origin https://github.com/Oyaabuun/random
+7. git push -u Origin main
