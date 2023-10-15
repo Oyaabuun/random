@@ -106,3 +106,5 @@ git push -u origin main
 YOU NEED TO HAVE __init__.py file isnide every separate folder so it can be made a package , thats why check the census-income has that file
 
 -e . this thing inside the requirements.txt says that whatever is ther intsll inside the current environment
+
+the setup.py is necesarry for creating a package
