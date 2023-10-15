@@ -45,6 +45,64 @@ GIT Commands
 2. git add . 
 3. git reset 
 4. git status
-5. git branch -M main 
+5. git branch 
+6. git commit -m "Your commit message here"
 6. git remote add Origin https://github.com/Oyaabuun/random
 7. git push -u Origin main
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+when you get fatal error
+ git push -u origin main
+To https://github.com/Oyaabuun/random.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Oyaabuun/random.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+ans
+
+Fetch Changes from the Remote:
+
+To update your local repository with the changes from the remote "main" branch, use the git fetch command:
+
+bash
+Copy code
+git fetch origin main
+Merge or Rebase Your Changes:
+
+After fetching the changes, you have two options to integrate them into your local "main" branch:
+
+a. Merge Changes: If you prefer merging, you can use the following command:
+
+bash
+Copy code
+git merge origin/main
+b. Rebase Changes: If you prefer rebasing to maintain a linear history, you can use the following command:
+
+bash
+Copy code
+git rebase origin/main
+Choose either "merge" or "rebase" based on your workflow preferences.
+
+Resolve any Merge Conflicts:
+
+If there are any merge conflicts, Git will notify you. You need to resolve these conflicts manually by editing the affected files and then continuing the merge or rebase process.
+
+Commit the Merged or Rebased Changes:
+
+After resolving any conflicts, commit the changes to your local "main" branch.
+
+Push Your Changes to GitHub:
+
+Once you have successfully merged or rebased the changes and resolved any conflicts, you can push your local "main" branch to GitHub:
+
+bash
+Copy code
+git push -u origin main
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+YOU NEED TO HAVE __init__.py file isnide every separate folder so it can be made a package , thats why check the census-income has that file
+
+-e . this thing inside the requirements.txt says that whatever is ther intsll inside the current environment
